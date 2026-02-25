@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – GymTimerPro</title>
+  <meta name="description" content="Privacy Policy for GymTimerPro, an iOS workout rest timer app with optional iCloud sync, StoreKit subscriptions, Live Activities, and local notifications.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alejandroestevemaza.github.io/GymTimerPro-privacy/">
+
+  <meta property="og:title" content="Privacy Policy – GymTimerPro">
+  <meta property="og:description" content="Learn how GymTimerPro collects, uses, stores, and protects information in the iOS app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alejandroestevemaza.github.io/GymTimerPro-privacy/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy Policy – GymTimerPro">
+  <meta name="twitter:description" content="Privacy Policy for the GymTimerPro iOS application.">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f3f6fb;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #d9e3f0;
+      --link: #0066d6;
+      --link-hover: #0051aa;
+      --primary: #0a84ff;
+      --rest: #ff9f0a;
+      --train: #30b0c7;
+      --complete: #34c759;
+      --logo-bg: #ffffff;
+      --logo-border: #d1d5db;
+      --shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 20% -10%, rgba(10, 132, 255, 0.12) 0%, transparent 45%),
+                  radial-gradient(circle at 100% 0%, rgba(255, 159, 10, 0.08) 0%, transparent 40%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--rest);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 56px;
+    }
+
+    main.page {
+      padding-top: 0;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, rgba(10, 132, 255, 0.08), rgba(52, 199, 89, 0.06));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .logo-wrap {
+      background: var(--logo-bg);
+      border: 1px solid var(--logo-border);
+      border-radius: 12px;
+      padding: 8px 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+      margin-top: 0;
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      margin: 14px 0 6px;
+    }
+
+    p,
+    li {
+      color: var(--text);
+    }
+
+    .lede {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .effective-date {
+      margin-top: 8px;
+      font-weight: 600;
+      color: var(--text);
+      display: inline-block;
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    nav {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.93rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .card ul,
+    .card ol {
+      margin: 8px 0 0;
+      padding-left: 22px;
+    }
+
+    .card li + li {
+      margin-top: 6px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .pill {
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: #f8fbff;
+      color: #0f172a;
+    }
+
+    .pill.training {
+      border-color: #1992a7;
+      background: #d6f3f8;
+      color: #0a4f5a;
+    }
+
+    .pill.rest {
+      border-color: #d57d00;
+      background: #ffe7c2;
+      color: #7a4100;
+    }
+
+    .pill.complete {
+      border-color: #259347;
+      background: #d9f7e2;
+      color: #14532d;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.93rem;
+      text-align: center;
+    }
+
+    address {
+      font-style: normal;
+      color: var(--text);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --surface: #151b23;
+        --text: #f3f6fb;
+        --muted: #c7d0dc;
+        --border: #2a3442;
+        --link: #7db7ff;
+        --link-hover: #a4ccff;
+        --primary: #5ca8ff;
+        --logo-bg: #ffffff;
+        --logo-border: #d4d8df;
+        --shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+      }
+
+      body {
+        background: radial-gradient(circle at 20% -10%, rgba(92, 168, 255, 0.14) 0%, transparent 45%),
+                    radial-gradient(circle at 100% 0%, rgba(255, 159, 10, 0.08) 0%, transparent 40%),
+                    var(--bg);
+      }
+
+      .pill {
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+      }
+
+      .pill.training {
+        border-color: #39b9d1;
+        background: #155a67;
+        color: #dcf8ff;
+      }
+
+      .pill.rest {
+        border-color: #ffb347;
+        background: #7a4100;
+        color: #fff0dd;
+      }
+
+      .pill.complete {
+        border-color: #57d983;
+        background: #1d5f35;
+        color: #e9ffef;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 0.7in;
+      }
+
+      :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --text: #000000;
+        --muted: #000000;
+        --border: #d0d0d0;
+        --link: #000000;
+        --link-hover: #000000;
+      }
+
+      * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+        line-height: 1.45;
+      }
+
+      nav {
+        display: none !important;
+      }
+
+      .hero,
+      .card {
+        border: 1px solid #d0d0d0;
+        background: #ffffff !important;
+      }
+
+      .pill {
+        border: 1px solid #bdbdbd;
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+
+      a {
+        color: #000000 !important;
+        text-decoration: underline;
+      }
+
+      h2,
+      h3 {
+        break-after: avoid-page;
+        page-break-after: avoid;
+      }
+
+      .card,
+      section,
+      article {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page">
+    <div class="hero">
+      <div class="brand">
+        <span class="logo-wrap">
+          <img src="logo.png" alt="GymTimerPro logo">
+        </span>
+      </div>
+      <h1>Privacy Policy for GymTimerPro</h1>
+      <p class="lede">This Privacy Policy describes how GymTimerPro handles information when you use the GymTimerPro iOS application and related widget functionality.</p>
+      <p class="effective-date">Effective Date: <time datetime="2026-02-25">February 25, 2026</time></p>
+      <div class="pill-row" aria-label="App data context">
+        <span class="pill training">Timer &amp; Routines</span>
+        <span class="pill rest">Local Notifications</span>
+        <span class="pill complete">Optional iCloud Sync</span>
+      </div>
+    </div>
+
+    <nav aria-label="Privacy policy sections">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#information-we-collect">Information We Collect</a></li>
+        <li><a href="#how-we-use-information">How We Use Information</a></li>
+        <li><a href="#sharing-disclosure">Sharing &amp; Disclosure</a></li>
+        <li><a href="#your-rights">Your Rights</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section>
+      <article class="card" id="introduction">
+        <h2>1. Introduction</h2>
+        <p>GymTimerPro is developed by Alejandro Esteve Maza ("we," "us," or "our"). GymTimerPro is designed to help users track gym set rest periods, manage routines, and view workout progress. This Privacy Policy applies to the GymTimerPro mobile application, its in-app features, and its widget/Live Activity features.</p>
+        <p>GymTimerPro does not require account registration or direct sign-in to use core functionality.</p>
+      </article>
+
+      <article class="card" id="definitions">
+        <h2>2. Definitions</h2>
+        <ul>
+          <li><strong>"Personal Information"</strong> means information that identifies, relates to, describes, or can reasonably be linked with an individual.</li>
+          <li><strong>"Processing"</strong> means any operation performed on information, including collection, storage, use, disclosure, or deletion.</li>
+          <li><strong>"CloudKit"</strong> means Apple’s iCloud database services used by GymTimerPro to sync certain app data to your private iCloud database when available.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="information-we-collect">
+        <h2>3. Information We Collect</h2>
+
+        <h3>3.1 Information Provided by Users</h3>
+        <ul>
+          <li>Routine content that you create in the app, such as routine names, classifications, number of sets, reps, rest duration, and optional weight values.</li>
+          <li>Workout progress records generated from your app activity, such as completion timestamps and routine/classification snapshots.</li>
+          <li>Timer configuration choices and preferences that you set in the app.</li>
+        </ul>
+
+        <h3>3.2 Automatically Collected Data</h3>
+        <ul>
+          <li>Local app state required for timer continuity, including countdown status and remaining time across foreground/background transitions.</li>
+          <li>Purchase entitlement state needed to determine whether Pro features are active (using Apple StoreKit transaction verification).</li>
+          <li>Daily usage counters used to apply free-tier limits.</li>
+        </ul>
+
+        <h3>3.3 Device Data</h3>
+        <ul>
+          <li>Technical and permission-related device signals needed for app functionality, such as local notification authorization status, Live Activities availability, and low power mode state.</li>
+          <li>GymTimerPro does not access your precise location, contacts, photos, camera, microphone, or HealthKit data.</li>
+        </ul>
+
+        <h3>3.4 Usage Data</h3>
+        <ul>
+          <li>In-app interactions related to timer and routine use, such as set progression, completion events, and selected routine parameters.</li>
+          <li>GymTimerPro does not include third-party advertising SDKs and does not use an in-app third-party analytics SDK at this time.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="legal-basis">
+        <h2>4. Legal Basis for Processing (GDPR/UK GDPR, Where Applicable)</h2>
+        <p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, we process personal data under the following legal bases, as applicable:</p>
+        <ul>
+          <li><strong>Performance of a contract:</strong> to provide the app features you request (timer functionality, routines, progress, and Pro entitlement handling).</li>
+          <li><strong>Legitimate interests:</strong> to maintain app reliability, security, and feature quality.</li>
+          <li><strong>Consent:</strong> for functions requiring permission (for example, local notifications), where consent is required by law.</li>
+          <li><strong>Legal obligations:</strong> where processing is required to comply with applicable law.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="how-we-use-information">
+        <h2>5. How We Use Information</h2>
+        <ul>
+          <li>To provide and operate timer, routine, and workout-progress functionality.</li>
+          <li>To save your app preferences and state across sessions.</li>
+          <li>To support optional synchronization through Apple iCloud/CloudKit private database services.</li>
+          <li>To enable and deliver local rest-finished alerts and Live Activity updates.</li>
+          <li>To manage subscription status and restore eligible purchases through Apple StoreKit.</li>
+          <li>To enforce free-tier usage limits and provide Pro feature access where applicable.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="sharing-disclosure">
+        <h2>6. Sharing and Disclosure of Information</h2>
+        <p>We do not sell personal information and we do not share personal information for cross-context behavioral advertising.</p>
+        <p>We may disclose information only as reasonably necessary in the following circumstances:</p>
+        <ul>
+          <li>To Apple services that are technically required for app functionality (StoreKit, iCloud/CloudKit, and platform notification infrastructure).</li>
+          <li>To comply with applicable law, regulation, legal process, or enforceable governmental request.</li>
+          <li>To protect rights, safety, and security of users, us, or others.</li>
+          <li>In connection with a business transfer (such as merger, acquisition, or asset sale), subject to applicable legal requirements.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="third-party-providers">
+        <h2>7. Third-Party Service Providers</h2>
+        <p>GymTimerPro relies on Apple-provided services to deliver core functionality:</p>
+        <ul>
+          <li><strong>Apple StoreKit:</strong> subscription purchase and entitlement verification.</li>
+          <li><strong>Apple iCloud/CloudKit (Private Database):</strong> optional data synchronization for app data.</li>
+          <li><strong>Apple UserNotifications / ActivityKit:</strong> local notifications and Live Activity presentation.</li>
+        </ul>
+        <p class="muted">Apple’s handling of information is governed by Apple’s own terms and privacy policies.</p>
+      </article>
+
+      <article class="card" id="analytics-tracking">
+        <h2>8. Analytics and Tracking Technologies</h2>
+        <p>GymTimerPro does not use third-party advertising trackers and does not request App Tracking Transparency (ATT) authorization at this time.</p>
+        <p>GymTimerPro does not use IDFA for advertising purposes. If analytics or tracking technologies are added in the future, this Privacy Policy will be updated before those changes take effect.</p>
+      </article>
+
+      <article class="card" id="data-retention">
+        <h2>9. Data Retention</h2>
+        <ul>
+          <li>On-device app data (including preferences and timer state) is retained until deleted by you, removed through app actions, or removed when the app is uninstalled.</li>
+          <li>Routine and progress records stored through SwiftData are retained until you delete them in-app or remove the app data from your device and/or iCloud account.</li>
+          <li>If iCloud/CloudKit sync is enabled and available, synced records remain in your private iCloud database according to your account configuration and Apple platform behavior.</li>
+          <li>Subscription purchase records are maintained by Apple under Apple’s policies; GymTimerPro stores only the entitlement status needed for feature access.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="data-security">
+        <h2>10. Data Security Measures</h2>
+        <p>We use reasonable administrative, technical, and organizational measures designed to protect information processed by GymTimerPro, including the iOS application sandbox, platform access controls, and secure Apple frameworks.</p>
+        <p>No security measure is guaranteed to be completely secure, and we cannot guarantee absolute security.</p>
+      </article>
+
+      <article class="card" id="international-transfers">
+        <h2>11. International Data Transfers</h2>
+        <p>GymTimerPro may be used globally. Where Apple services are involved (including iCloud/CloudKit and StoreKit), information may be processed in countries other than your own. International transfers performed by Apple are governed by Apple’s legal mechanisms and policies.</p>
+      </article>
+
+      <article class="card" id="your-rights">
+        <h2>12. Your Rights (U.S. and GDPR Regions)</h2>
+        <p>Depending on your location and applicable law, you may have rights to:</p>
+        <ul>
+          <li>Request access to personal information.</li>
+          <li>Request correction of inaccurate personal information.</li>
+          <li>Request deletion of personal information.</li>
+          <li>Request restriction of processing, or object to certain processing.</li>
+          <li>Request portability of information where applicable.</li>
+          <li>Withdraw consent where processing is based on consent.</li>
+          <li>Lodge a complaint with a supervisory authority where applicable.</li>
+        </ul>
+        <p>To exercise these rights, contact us using the information in Section 17. We may request information necessary to verify your request.</p>
+      </article>
+
+      <article class="card" id="california-rights">
+        <h2>13. California Privacy Rights</h2>
+        <p>If you are a California resident, you may have rights under the California Consumer Privacy Act (CCPA), as amended by the California Privacy Rights Act (CPRA), including rights to know, access, correct, and delete personal information, subject to legal exceptions.</p>
+        <ul>
+          <li>GymTimerPro does not sell personal information.</li>
+          <li>GymTimerPro does not share personal information for cross-context behavioral advertising.</li>
+          <li>We do not knowingly process personal information of minors under 16 for sale or sharing.</li>
+          <li>You have a right not to receive discriminatory treatment for exercising your privacy rights.</li>
+        </ul>
+      </article>
+
+      <article class="card" id="childrens-privacy">
+        <h2>14. Children’s Privacy</h2>
+        <p>GymTimerPro is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, contact us and we will take reasonable steps to address the issue in accordance with applicable law, including COPPA where applicable.</p>
+      </article>
+
+      <article class="card" id="dnt-signals">
+        <h2>15. Do Not Track Signals</h2>
+        <p>Because GymTimerPro is a mobile app and not a web browser service, it does not currently respond to browser-based Do Not Track (DNT) signals.</p>
+      </article>
+
+      <article class="card" id="changes-policy">
+        <h2>16. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When material changes are made, we will revise the Effective Date above. Your continued use of GymTimerPro after the updated policy becomes effective means the updated policy applies to your use of the app.</p>
+      </article>
+
+      <article class="card" id="contact">
+        <h2>17. Contact Information</h2>
+        <address>
+          <strong>Data Controller / Developer</strong><br>
+          Alejandro Esteve Maza<br>
+          Website: <a href="https://alejandro-esteve.com" rel="noopener noreferrer">alejandro-esteve.com</a><br>
+          Privacy and data requests: please use the contact method available on the website above or the developer support contact listed on the GymTimerPro App Store page.
+        </address>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>GymTimerPro Privacy Policy</p>
+  </footer>
+</body>
+</html>
