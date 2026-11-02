@@ -1,6 +1,6 @@
-# GymTimerPro Privacy
+# RepBuzz Privacy
 
-Repositorio estático de la política de privacidad pública de **GymTimerPro**.
+Repositorio estático de la política de privacidad pública de **RepBuzz**.
 
 ## Contenido
 
